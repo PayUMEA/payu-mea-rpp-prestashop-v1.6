@@ -465,10 +465,9 @@ class payu extends PaymentModule
 		$paymentMethods = array(
 			'CREDITCARD' => 'Credit card',
 			'DISCOVERYMILES' => 'Discovery Miles',
-			'GLOBALPAY' => 'Global Pay',
-			'DEBITCARD' => 'Debit card',
 			'EBUCKS' => 'eBucks',
-			'EFT' => 'Electronic Funds Transfer (EFT)'
+			'EFT' => 'Electronic Funds Transfer (SmartEFT)',
+			'EFT_PRO' => 'Electronic Funds Transfer (EFT Pro)'
 		);
 
 		$options = array();
