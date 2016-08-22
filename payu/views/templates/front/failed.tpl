@@ -9,10 +9,12 @@
 *  Property of NetCraft DevOps
 *}
 
-{capture name=path}{l s='Credit/Debit card payment.' mod='payu'}{/capture}
-
+{capture name=path}{l s='PayU secure payments' mod='payu'}{/capture}
+{if $error}
+	<h3>{$error}</h3>
+{else}
 <!--<div style="margin: 0 10px 10px 50px">-->
-	<h3>{l s='Transaction error encountered while processing payment' mod='payu'}</h3>
+	<h3>{l s='Paymeny transaction error encountered while processing payment' mod='payu'}</h3>
 	<p>
 		<h4>{l s='Payment details ' mod='payu'}</h4>
 		-{l s=' Amount: ' mod='payu'} <span class="price"> <strong>R{$total_paid}</strong></span>
@@ -29,4 +31,5 @@
 		{l s='If you have any questions or concerns, please contact our ' mod='payu'} 
 		<a href="{$link->getPageLink('contact', true)|escape:'html'}" style="color:#317fd8">{l s='CUSTOMER CARE.' mod='bankwire'}</a>
 	</p>
+{/if}
 <!--</div>-->

@@ -9,7 +9,7 @@
 *  Property of NetCraft DevOps
 *}
 
-{capture name=path}{l s='Credit/Debit card payment.' mod='payu'}{/capture}
+{capture name=path}{l s='PayU secure payments' mod='payu'}{/capture}
 
 <div style="margin: 0 10px 10px 50px">
 	
@@ -19,7 +19,7 @@
 	<br />
 	<p>
 		<h4>{l s='Payment details ' mod='payu'}</h4>
-		-{l s=' Amount: ' mod='payu'} <span class="price"> <strong>R{$total_paid}</strong></span>
+		-{l s=' Amount paid: ' mod='payu'} <span class="price"> <strong>R{$total_paid}</strong></span>
 		<br /><br />
 		- {l s='Card: ' mod='payu'}  <strong>{if $cardInfo}{$cardInfo}{else}___________{/if}</strong>
 		<br /><br />
